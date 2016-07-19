@@ -18,15 +18,15 @@ def make_timestamp():
 	return time.strftime("%a%d%b%Y%H%M%S", time.gmtime())
 
 def make_image_location(name):
-	return os.path.join(home, IMG_FOLDER, name);
+	return os.path.join(home, IMG_FOLDER, name)
 
 def updload_picture(img_name, img_path):
 	upload = UPLOADER_CMD + " " + img_path + " " + img_name
 	call([upload], shell=True)
 
 def take_picture():
-	img_name = make_timestamp() + '.jpg';
-	img_path = make_image_location(img_name);
+	img_name = make_timestamp() + '.jpg'
+	img_path = make_image_location(img_name)
 	camera.capture(img_path);
 	updload_picture(img_name, img_path)
 
