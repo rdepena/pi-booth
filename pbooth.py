@@ -27,7 +27,7 @@ def updload_picture(img_name, img_path):
 def take_picture():
 	img_name = make_timestamp() + '.jpg'
 	img_path = make_image_location(img_name)
-	camera.capture(img_path);
+	camera.capture(img_path)
 	updload_picture(img_name, img_path)
 
 while True:
