@@ -8,6 +8,7 @@ BUTTON_PIN = 18
 LED_PIN = 17
 HOME = '/home/pi'
 IMG_FOLDER = "photo_booth"
+REMOTE_FOLDER = "/Photos/photo-booth/"
 UPLOADER_CMD = os.path.join(HOME, "Documents/Projects/Dropbox-Uploader/dropbox_uploader.sh upload")
 
 GPIO.setmode(GPIO.BCM)
@@ -24,7 +25,7 @@ def make_image_location(name):
 	return os.path.join(HOME, IMG_FOLDER, name)
 
 def updload_picture(img_name, img_path):
-	upload = UPLOADER_CMD + " " + img_path + " " + img_name
+	upload = UPLOADER_CMD + " " + img_path + " " + REMOTE_FOLDER + img_name
 	call([upload], shell=True)
 
 def count_down(duration, intervals):
