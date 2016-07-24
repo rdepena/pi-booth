@@ -1,4 +1,6 @@
-Simple program that takes a still using the Raspbery Pi Camera module and uploads it to Dropbox using [Dropbox-Uploader](https://github.com/andreafabrizi/Dropbox-Uploader)
+###Raspbery Pi "photo booth" build;
+
+Button, LED count down indicator take a still and uploads it to Dropbox using [Dropbox-Uploader](https://github.com/andreafabrizi/Dropbox-Uploader).
 
 
 ### Hardware 
