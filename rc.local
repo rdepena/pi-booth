@@ -19,6 +19,6 @@ if [ "$_IP" ]; then
 fi
 
 #Auto run the photo booth app
-python /home/pi/Documents/Projects/pi-booth/pbooth.py
+python /home/pi/Documents/Projects/pi-booth/pbooth.py &
 
 exit 0
